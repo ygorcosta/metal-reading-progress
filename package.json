@@ -24,7 +24,7 @@
     "metal"
   ],
   "dependencies": {
-    "metal-scrollspy": "^2.0.0",
+    "metal-scrollspy": "github:ygorcosta/metal-scrollspy#reading-progress",
     "metal-soy": "^2.0.0"
   },
   "devDependencies": {

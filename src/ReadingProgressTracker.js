@@ -41,6 +41,7 @@ class ReadingProgressTracker extends Scrollspy {
 	 * @param {!Object} data
 	 */
 	handleActiveIndexChanged(data) {
+		console.log('handleActiveIndexChanged', data);
 		if (core.isDef(data.prevVal) && data.prevVal >= 0) {
 			var prevElement = this.getElementForIndex(data.prevVal);
 			prevElement.removeAttribute('data-reading-progress');
@@ -54,6 +55,7 @@ class ReadingProgressTracker extends Scrollspy {
 	 * @param {!Object} data
 	 */
 	handleProgressChanged(data) {
+		console.log('handleProgressChanged', data);
 		var element = this.getElementForIndex(this.activeIndex);
 		element.setAttribute('data-reading-progress', data.newVal);
 		if (data.newVal < 100) {
